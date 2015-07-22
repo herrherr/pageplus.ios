@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface ViewController : UIViewController
+{
+    UIWebView *view2;
+}
 
+@property (nonatomic, retain) IBOutlet UIWebView *view2;
 
 @end
 

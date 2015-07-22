@@ -13,10 +13,13 @@
 @end
 
 @implementation ViewController
-
+@synthesize view2;
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    NSLog(@"I am Here");
+    NSURL *url = [NSURL URLWithString:@"http://www.pagepluscellular.com"];
+    [self.view2 loadRequest:[NSURLRequest requestWithURL:url]];
+    NSLog(@"Now I am here");
 }
 
 - (void)didReceiveMemoryWarning {
